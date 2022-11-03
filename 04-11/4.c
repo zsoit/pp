@@ -18,7 +18,7 @@ void kula(){
     printf("> Podaj promień kuli: ");
     scanf("%f", &r);
 
-    v = (4/3)*PI*(pow(r,3));
+    v = (4.0/3.0)*PI*(pow(r,3));
     printf("Kula o promieniu %.2f ma objętość: %.2f",r,v);
 }
 
@@ -44,7 +44,7 @@ void stozek(){
     printf("> Podaj wysokosc stozka: ");
     scanf("%f", &h);
 
-    v = (PI/3)*(pow(r,2))*h;
+    v = ((1.0/3.0)*PI)*(pow(r,2))*h;
     printf("Stozek o promieniu %.2f i wysokosci %.2f ma objętość: %.2f",r,h,v);
 }
 
