@@ -31,7 +31,6 @@ int main()
        suma += D1[i];
        iloczyn *= D1[i];
 
-
     }
 
     printf("\n > Suma tablicy: ");
