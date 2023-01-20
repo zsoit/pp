@@ -8,35 +8,33 @@
 int main()
 {
     char napis[N];
+    printf("Podaj zdanie: ");
+    fgets(napis, sizeof(napis), stdin);
     int i;
     int ileLiter =0;
     int ileCyfr=0;
     int ileMalych=0;
     int ileDuzych=0;
+    int liczbaSlow=0;
 
-    srand(time(NULL));
 
     for(i=0; i<N;i++){
-
-        napis[i] = rand()%(128-48)+48; //74+1
 
         if(isalpha(napis[i])) ileLiter++;
         if(islower(napis[i])) ileMalych++;
         if(isupper(napis[i])) ileDuzych++;
         if(isdigit(napis[i])) ileCyfr++;
+        if(isspace(napis[i])) liczbaSlow++;
     ;
 
     }
 
-    printf("Wylosowany napis: %s \n \n", napis);
+    printf("%s \n \n", napis);
     printf("Liczba liter %d \n", ileLiter);
     printf("Liczba malych liter: %d \n", ileMalych);
     printf("Liczba duzych liter: %d \n", ileDuzych);
     printf("Liczba cyfr: %d \n", ileCyfr);
-
-
-
-
+    printf("Liczba slow: %d \n", liczbaSlow);
 
     printf(" \n \n");
     system("pause");
@@ -44,12 +42,3 @@ int main()
 
 }
 
-
-
-
-/*
-char napis[80];
-fgets(napis, siezeof(napis), stdin);
-
-Zadanie 2,3
-*/
