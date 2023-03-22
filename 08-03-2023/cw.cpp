@@ -2,36 +2,36 @@
 
 using namespace std;
 
-class prostokat {
-private:
-    float szer;
-    float wys;
-public:
-    prostokat();
-    prostokat(float s, float w);
-    ~prostokat();
-    float getSzer() const;
-    float getWys() const;
-    void setSzer(float s);
-    void setWys(float w);
-    float obliczPole() const;
-    float obliczObwod() const;
+class prostokat
+{
+    private:
+        float szer;
+        float wys;
+    public:
+        prostokat();
+        prostokat(float s, float w);
+        ~prostokat();
+        float getSzer() const;
+        float getWys() const;
+        void setSzer(float s);
+        void setWys(float w);
+        float obliczPole() const;
+        float obliczObwod() const;
 };
 
 prostokat::prostokat() {
     szer = 1.0f;
     wys = 1.0f;
-    //Utworzono obiekt konstruktorem bezargumentowym
+
 }
 
 prostokat::prostokat(float s, float w) {
     szer = s;
     wys = w;
-    //Utworzono obiekt konstruktorem z argumentami
 }
 
 prostokat::~prostokat() {
-    //Zniszczono obiekt
+
 }
 
 float prostokat::getSzer() const {
