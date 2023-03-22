@@ -1,5 +1,4 @@
 /*
-Maciej Czubiński
 1. W programie należy utworzyć tablicę struktur typu osoba (do przechowywania danych osobowych).
 2. Program powinien wyświetlać na ekranie menu składające się z 3 pozycji:
        1-Wprowadzanie danych
