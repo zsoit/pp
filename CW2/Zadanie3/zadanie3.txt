@@ -6,7 +6,7 @@ Proszę utworzyć klasę o nazwie uklad będącą programowym modelem układu dw
 równań z dwoma niewiadomymi postaci:
 
 //uklad rownań
-{ ax+by=c
+{ ax+by=cń
 { dx+ey=f
 
 

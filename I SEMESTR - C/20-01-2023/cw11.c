@@ -12,10 +12,10 @@ int sumuj(double *suma, ...)
    double x;          /* biezacy argument z listy */
    int licznik = 0;   /* licznik argumentow       */
    va_list arg;       /* zmienna do obslugi listy argumentow */
-   va_start(arg, suma); /* ostatni argument ustalony */ 
+   va_start(arg, suma); /* ostatni argument ustalony */
 
    /* petla jest powtarzana dopoki na liscie argumentow nie pojawi sie 0.0 */
-   /* zero sygnalizuje koniec listy argumentów */
+   /* zero sygnalizuje koniec listy argumentï¿½w */
    while( (x = va_arg(arg, double)) != 0.0 ) /* sprawdzanie kolejnych argumentow */
    {
       *suma += x;   /* dodanie biezacej liczby do sumy       */
@@ -29,7 +29,7 @@ int main()
 {
    system("cls");
    double wynik;
-   sumuj(&wynik, 1.0, 2.0, 3.14, 4.0, 0.0); 
+   sumuj(&wynik, 1.0, 2.0, 3.14, 4.0, 0.0);
    printf("%6.2lf\n", wynik);
    sumuj(&wynik, 1.0, 2.0, 3.0, 0.0);
    printf("%6.2lf\n\n", wynik);

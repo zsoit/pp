@@ -1,0 +1,15 @@
+Zadanie 1
+Proszę w obu konstruktorach oraz w destruktorze klasy prostokat umieścić polecenia
+wypisujące na ekranie następujące komunikaty tekstowe:
+
+ w konstruktorze bezargumentowym polecenie:
+cout << "Utworzono obiekt konstruktorem bezargumentowym" << endl;
+
+ w konstruktorze z argumentami polecenie:
+cout << "Utworzono obiekt konstruktorem z argumentami" << endl;
+ w destruktorze polecenie:
+cout << "Zniszczono obiekt" << endl;
+
+Następnie proszę przetestować działanie poniższego programu i zaobserwować w jakich
+momentach działania programu obiekty są tworzone i niszczone (zasygnalizują to
+komunikaty tekstowe).

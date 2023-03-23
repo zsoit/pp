@@ -20,18 +20,20 @@ class prostokat
 };
 
 prostokat::prostokat() {
+    cout << "Utworzono obiekt konstruktorem bezargumentowym" << endl;
     szer = 1.0f;
     wys = 1.0f;
 
 }
 
 prostokat::prostokat(float s, float w) {
+    cout << "Utworzono obiekt konstruktorem z argumentami" << endl;
     szer = s;
     wys = w;
 }
 
 prostokat::~prostokat() {
-
+    cout << "Zniszczono obiekt" << endl;
 }
 
 float prostokat::getSzer() const {
@@ -81,8 +83,5 @@ int main() {
     << ", Obwod p3: "
     << p3->obliczObwod() << '\n';
 
-
-    p1.~prostokat();
-    p2.~prostokat();
     delete p3;
 }
