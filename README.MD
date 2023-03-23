@@ -5,6 +5,28 @@ I SEMESTR
 II SEMESTR
     C++ Obiektowy
 
+## Spis treści
+1. [INSTALACJA KOMPLILATORA](#instalacja-kompilatora)
+2. [User snippets in VSCODE](#user-snippets-in-vscode)
+
+
+# INSTALACJA KOMPILATORA
+## gcc - komplilator C/C++ dla Visual Studio Code
+1. Link: https://nuwen.net/mingw.html (Google: MinGW Distro)
+2. Pobierz plik : mingw-18.0-without-git.exe (49.3 MB)
+3. Zainstaluj na Dysku C: (Extract to: )
+4. Dodaj zmienną środowiskową PATH C:\MinGW\bin
+(Windows + R = sysdm.cpl)
+5. Zaawansowane->Zmienne środowiskowe->Path
+
+6. (Opcjonalnie) Zainstaluj dodatki : (Ctrl+Shift+X)
+Better C++ Syntax
+C/C++
+## Jak uruchomic?
+
+W Visual Studio Code naciśnij : Ctrl+Shift+~
+(lub: Terminal->New Split/Terminal->Nowe okno)
+Polecenie: **g++ nazwa_pliku.c; ./a**
 
 
 # User Snippets in VsCode:
@@ -14,10 +36,9 @@ II SEMESTR
 - !class - szablon klasy C++
 
 
+Otwórz: ``` C:\Users\%USERNAME%\AppData\Roaming\Code\User\snippets ```
 
-Open: ```cmd C:\Users\%USERNAME%\AppData\Roaming\Code\User\snippets ```
-
-## add new file: cpp.json
+## nowy plik: cpp.json
 ```json
 {
 "PK Template of main.cpp":
@@ -51,7 +72,7 @@ Open: ```cmd C:\Users\%USERNAME%\AppData\Roaming\Code\User\snippets ```
     "            ~MojaKlasa(){};",
     "    }",
     "        ",
-    "}",
+    "};",
     "",
     "",
     "",
@@ -63,7 +84,7 @@ Open: ```cmd C:\Users\%USERNAME%\AppData\Roaming\Code\User\snippets ```
 }
 ```
 
-## add new fil: c.json
+## nowy plik: c.json
 ```json
 {
 "PK Template of main.c": {
