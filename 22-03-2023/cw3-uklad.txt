@@ -1,0 +1,26 @@
+W języku C++:
+użyj namespace std;
+Napisz dzielac to na plik klasy i plik naglowkowy oraz plik glowny
+
+Proszę utworzyć klasę o nazwie uklad będącą programowym modelem układu dwóch
+równań z dwoma niewiadomymi postaci:
+
+//uklad rownań
+{ ax+by=c
+{ dx+ey=f
+
+
+Klasa powinna zawierać:
+- pola składowe przechowujące wartości współczynników układu a, b, c, d, e, f.
+
+- konstruktor z sześcioma argumentami określającymi wartości współczynników
+układu równań.
+
+- funkcję składową wczytującą z klawiatury wartości współczynników układu równań.
+
+- funkcję składową wypisującą na ekranie układ równań w postaci matematycznej
+(gdzie zamiast symboli a, b, c, d, e, f pojawią się konkretne wartości
+współczynników).
+
+-  funkcję składową do rozwiązywania układu równań metodą wyznaczników Cramera
+(rozpatrzyć trzy warianty układu równań: oznaczony, nieoznaczony, sprzeczny).

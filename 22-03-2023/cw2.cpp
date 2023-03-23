@@ -20,7 +20,6 @@ class Rownanie
 };
 
 
-
 Rownanie::Rownanie(float a, float b, float c) {
     cout<<"ROWNANIE KWADRATOWE:"<<endl;
     this->a = a;

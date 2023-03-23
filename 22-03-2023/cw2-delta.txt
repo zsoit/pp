@@ -1,20 +1,19 @@
-Zadanie 2
+W języku C++:
 Proszę utworzyć klasę o nazwie rownanie będącą programowym modelem równania kwadratowego postaci (ax^2+bx+c) .
-
 
 Klasa powinna zawierać:
 
- pola składowe przechowujące wartości współczynników równania a, b, c.
+- pola składowe przechowujące wartości współczynników równania a, b, c.
 
- konstruktor z trzema argumentami określającymi wartości współczynników
+- konstruktor z trzema argumentami określającymi wartości współczynników
 równania.
 
- funkcję składową wczytującą z klawiatury wartości współczynników równania.
+- funkcję składową wczytującą z klawiatury wartości współczynników równania.
 
- funkcję składową wypisującą na ekranie równanie w postaci matematycznej (gdzie
+- funkcję składową wypisującą na ekranie równanie w postaci matematycznej (gdzie
 zamiast symboli a, b, c pojawią się konkretne wartości współczynników).
 
- funkcję składową do rozwiązywania równania (rozpatrzyć sytuację, gdy wyróżnik
+- funkcję składową do rozwiązywania równania (rozpatrzyć sytuację, gdy wyróżnik
 równania jest większy lub równy zero - wtedy obliczyć rozwiązania oraz sytuację,
 gdy wyróżnik jest mniejszy od zera - wtedy tylko komunikat, że brak rozwiązań
 w dziedzinie liczb R).
