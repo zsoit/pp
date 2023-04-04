@@ -47,6 +47,10 @@ Otwórz: ``` C:\Users\%USERNAME%\AppData\Roaming\Code\User\snippets ```
   "body": [
     "#include <iostream>",
     "#include <cstdlib>",
+	"using std::cout;",
+	"using std::cin;>",
+	"using std::endl;",
+	"using std::string;",
     "",
     "int main() {",
     "    system(\"cls\");",
@@ -55,31 +59,35 @@ Otwórz: ``` C:\Users\%USERNAME%\AppData\Roaming\Code\User\snippets ```
     "    return 0;",
     "}"
   ],
-  "description": "PK Szablon main.cpp"
+  "description": "PK Template of main.cpp"
 },
 "Template of C++ Class": {
-  "prefix": "!class",
+  "prefix": "!cppclass",
   "body": [
+	"#ifndef MYCLASS_H",
+	"#define MYCLASS_H",
+	"",
     "#include <iostream>",
-    "namespace Zadanie",
+    "namespace Task",
     "{",
-    "    class MojaKlasa",
+    "    class MyClass",
     "    {",
     "        private:",
     "            int a;",
     "        public:",
-    "            MojaKlasa(){};",
-    "            ~MojaKlasa(){};",
-    "    }",
-    "        ",
-    "};",
+    "            MyClass(){};",
+    "            ~MyClass(){};",
+    "    };",
     "",
+    "}",
+	"",
+    "#endif //MYCLASS_H_HPP",
     "",
     "",
     "",
     ""
   ],
-  "description": "Szablon klasy C++"
+  "description": "Template of C++ Class"
 }
 }
 ```

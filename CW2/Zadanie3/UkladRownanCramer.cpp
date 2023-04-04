@@ -1,4 +1,8 @@
 #include <iostream>
+using std::cout;
+using std::cin;
+using std::endl;
+
 namespace Cw2Zadanie3
 {
     class UkladRownanCramer
@@ -7,7 +11,7 @@ namespace Cw2Zadanie3
             double a, b, c, d, e, f;
         public:
             UkladRownanCramer(double a, double b, double c, double d, double e, double f){
-                std::cout<<"== UKLAD ROWNAN - METODA CRAMERA =="<<std::endl;
+                cout<<"== UKLAD ROWNAN - METODA CRAMERA =="<<endl;
                 this->a=a;
                 this->b=b;
                 this->c=c;
@@ -17,34 +21,34 @@ namespace Cw2Zadanie3
 
             }
             UkladRownanCramer(){
-                std::cout<<"== UKLAD ROWNAN - METODA CRAMERA =="<<std::endl;
+                cout<<"== UKLAD ROWNAN - METODA CRAMERA =="<<endl;
             }
 
             void wczytaj() {
-                std::cout << "Podaj wspolczynniki: \n";
+                cout << "Podaj wspolczynniki: \n";
 
-                std::cout<<"a: ";
-                std::cin>>a;
+                cout<<"a: ";
+                cin>>a;
 
-                std::cout<<"b: ";
-                std::cin>>b;
+                cout<<"b: ";
+                cin>>b;
 
-                std::cout<<"c: ";
-                std::cin>>c;
+                cout<<"c: ";
+                cin>>c;
 
-                std::cout<<"d: ";
-                std::cin>>d;
+                cout<<"d: ";
+                cin>>d;
 
-                std::cout<<"e: ";
-                std::cin>>e;
+                cout<<"e: ";
+                cin>>e;
 
-                std::cout<<"f: ";
-                std::cin>>f;
+                cout<<"f: ";
+                cin>>f;
             }
 
             void wypisz() {
-                std::cout<< a << "x + " << b << "y = " << c << std::endl;
-                std::cout<< d << "x + " << e << "y = " << f << std::endl;
+                cout<< a << "x + " << b << "y = " << c << endl;
+                cout<< d << "x + " << e << "y = " << f << endl;
             }
 
             void rozwiaz() {
@@ -55,18 +59,18 @@ namespace Cw2Zadanie3
                 if (W != 0) {
                     double x = Wx / W;
                     double y = Wy / W;
-                    std::cout << "Rozwiazanie: x = " << x << ", y = " << y << std::endl;
+                    cout << "Rozwiazanie: x = " << x << ", y = " << y << endl;
                 }
                 else {
                     if (Wx == 0 && Wy == 0) {
-                        std::cout << "Uklad jest nieoznaczony" << std::endl;
+                        cout << "Uklad jest nieoznaczony" << endl;
                     }
                     else {
-                        std::cout << "Uklad jest sprzeczny" << std::endl;
+                        cout << "Uklad jest sprzeczny" << endl;
                     }
                 }
 
-                std::cout<<std::endl<<std::endl;
+                cout<<endl<<endl;
             }
 
     };

@@ -1,0 +1,28 @@
+Zadania do wykonania w języku C++:
+proszę  utworzyć klasę o nazwie Tablica. Klasa ta ma stanowić programowy model dynamicznej tablicy jednowymiarowej dla liczb stałoprzecinkowych.
+
+Klasa powinna zawierać następujące pola składowe:
+1.pole o nazwie n typu intprzechowujące liczbę elementów tablicy.
+2.pole o nazwie wsk typu wskaźnikowego (typ wskazywany int) przechowujące adres tablicy dynamicznej.
+
+Klasa powinna zawierać następujące funkcje składowe:
+
+1.konstruktor bezargumentowy(tworzy dynamiczną tablicę o domyślnym rozmiarze 10 i zeruje elementy tablicy).
+2.konstruktor z argumentem typu intokreślającym liczbę elementów tablicy (tworzy dynamiczną tablicę o rozmiarze określonym przez ten argument i zeruje elementy tablicy).
+3.konstruktor kopiujący(proszę wzorować się na przykładziez wykładu).
+4.destruktor(zwalnia pamięć).
+5.funkcjao nazwie get(tzw. getterzwracający wartość elementu tablicyo indeksie i). Funkcja powinna posiadać jeden argument w postaciwartości indeksu i.
+6.funkcjao nazwie set(tzw. setternadający określoną wartośćelementowi tablicyoindeksie i). Funkcja bez wyniku, powinna posiadaćdwa argumenty: indeks elementu i nowąwartość tego elementu.
+7.funkcja o nazwie losuj(bezargumentowa, bez wyniku, losuje zawartość tablicy wpostaci liczb całkowitych z przedziału 1÷10).
+8.funkcja o nazwie wypisz(bezargumentowa, bez wyniku, wypisuje zawartość tablicy na ekranie).
+9.funkcjao nazwie avg(bezargumentowa,zwraca średnią arytmetyczną liczb znajdujących się w tablicy).
+10.funkcjao nazwie geom(bezargumentowa, zwraca średnią geometryczną liczb znajdujących się w tablicy). Wskazówka:średnia geometryczna to pierwiastekn-tego stopnia z iloczynu elementów tablicy, gdzie n to liczba elementów. Do pierwiastkowania użyć funkcji pow.
+11.funkcjao nazwie minimum(bezargumentowa, zwraca wartość najmniejszego elementu tablicy).
+12.funkcjao nazwie maksimum(bezargumentowa, zwraca wartość największego elementu tablicy).
+13.funkcjao nazwie sortuj(bezargumentowa, bez wyniku, sortuje elementy tablicy). Wskazówka: użyć sortowania bąbelkowego (algorytm bubble sort).
+14.funkcjao nazwie mediana(bezargumentowa, zwraca medianę, czyli wartość środkową).Uwaga: jeżeli w powyższych podpunktach jest mowa o tym, że "funkcja zwraca...", toznaczy, żechodzi o zwracanie wyniku działania funkcji przy użyciu instrukcjireturn.Wkonstruktorach proszę pamiętać o sprawdzaniu poprawności przydziału pamięci operatorem new(sprawdzanie zerowej wartości wskaźnika, docelowo użycie wyjątków-otym na kolejnych wykładach).
+
+Rozwiązanie zadania powinno zawierać pełny kod źródłowy programu, tzn.:
+- deklarację klasy Tablica,
+- definicję klasy Tablica,
+- krótki program (funkcja main) testujący wykorzystanie poszczególnych składników klasy Tablica.

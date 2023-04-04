@@ -1,0 +1,29 @@
+uruchamianie:
+g++ *.cpp; ./a
+
+Zadanie dodatkowe
+
+1. Na podstawie fragmentów kodu źródłowego znajdujących się w punkcie 2. Konstruktor kopiujący - Rozwiązanie problemu –własny konstruktor kopiując,
+proszę  utworzyć klasę o nazwie Punkt zawierającą omawiane składowe statyczne.
+
+ Następnie proszę:
+- utworzyć krótki program testujący(zalążek takiego programu znajduje się w pliku zwykładem) i przetestować w   nim zagadnienia  dotyczące  statycznego   pola składowego i statycznej funkcji składowej.
+- rozwiązać  problem  opisany  na  ostatnim  slajdzie  wykładu  i  zdefiniować w  klasie Punkt prawidłowy konstruktor kopiujący.
+
+Języki i paradygmaty programowania                                                                2023Strona 4Konstruktor kopiującyRozwiązanie problemu –własny konstruktor kopiujący
+
+
+2. Konstruktor kopiujący - Rozwiązanie problemu –własny konstruktor kopiujący
+class Tablica
+ {
+    public:
+        Tablica(introzmiar);
+        ~Tablica();
+        Tablica(constTablica &t);
+    private:
+        int n;
+        int *wsk;
+}
+;
+Tablica::Tablica(introzmiar){n = rozmiar;wsk = newint[n]; }
+Tablica::~Tablica(){delete[] wsk;}
